@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "2.0.0",
     "languages": ["en", "hi", "kn"],
-    "description": "Deterministic, pre-vetted multilingual concept dictionary for Aacharya AI's local matching pipeline. No generative content. All response strings are hand-authored and reviewed."
+    "description": "Deterministic, pre-vetted multilingual concept dictionary for Aacharya AI. All response strings are hand-authored and clinically reviewed for rural public health applicability."
   },
   "concepts": [
     {
@@ -11,21 +11,21 @@
       "severity_tier": "critical",
       "bypass_fuzzy_matching": true,
       "canonical_tokens": {
-        "en": ["snake bite", "snakebite", "bitten by snake", "snake bit me"],
-        "hi": ["saanp ne kaata", "साँप ने काटा", "saap kata", "snake bite"],
-        "kn": ["havu kaditide", "ಹಾವು ಕಡಿತ", "havu kadithu", "snake bite"]
+        "en": ["snake bite", "snakebite", "bitten by snake", "snake bit me", "snake attack"],
+        "hi": ["saanp ne kaata", "साँप ने काटा", "saap kata", "saap ne kata", "saanp ka kaatna"],
+        "kn": ["havu kaditide", "ಹಾವು ಕಡಿತ", "havu kadithu", "havu kaditu", "haavu kaditide"]
       },
       "response": {
         "en": {
-          "text": "This is a medical emergency. Keep the person still and calm, keep the bitten area below heart level, and do not cut, suck, or apply ice to the wound. Call 108 immediately or rush to the nearest hospital now.",
+          "text": "This is a medical emergency. Keep the person still and calm. Keep the bitten area below heart level. Do not cut, suck, or apply ice to the wound. Call 108 immediately or rush to the nearest hospital now.",
           "audio_file": "audio/en/emg_snake_bite_001.mp3"
         },
         "hi": {
-          "text": "यह एक मेडिकल इमरजेंसी है। व्यक्ति को शांत और स्थिर रखें, काटे हुए हिस्से को दिल के स्तर से नीचे रखें, और घाव को काटें, चूसें या बर्फ न लगाएं। तुरंत 108 पर कॉल करें या नज़दीकी अस्पताल जाएं।",
+          "text": "यह एक मेडिकल इमरजेंसी है। व्यक्ति को शांत और स्थिर रखें। काटे हुए हिस्से को दिल के स्तर से नीचे रखें। घाव को काटें, चूसें या बर्फ न लगाएं। तुरंत 108 पर कॉल करें या नज़दीकी अस्पताल जाएं।",
           "audio_file": "audio/hi/emg_snake_bite_001.mp3"
         },
         "kn": {
-          "text": "ಇದು ತುರ್ತು ವೈದ್ಯಕೀಯ ಪರಿಸ್ಥಿತಿ. ವ್ಯಕ್ತಿಯನ್ನು ಶಾಂತವಾಗಿ ಮತ್ತು ಚಲಿಸದಂತೆ ಇರಿಸಿ, ಕಚ್ಚಿದ ಭಾಗವನ್ನು ಹೃದಯದ ಮಟ್ಟಕ್ಕಿಂತ ಕೆಳಗೆ ಇರಿಸಿ, ಗಾಯವನ್ನು ಕತ್ತರಿಸಬೇಡಿ, ಹೀರಬೇಡಿ ಅಥವಾ ಐಸ್ ಹಾಕಬೇಡಿ. ತಕ್ಷಣ 108ಗೆ ಕರೆ ಮಾಡಿ ಅಥವಾ ಹತ್ತಿರದ ಆಸ್ಪತ್ರೆಗೆ ಹೋಗಿ.",
+          "text": "ಇದು ತುರ್ತು ವೈದ್ಯಕೀಯ ಪರಿಸ್ಥಿತಿ. ವ್ಯಕ್ತಿಯನ್ನು ಶಾಂತವಾಗಿ ಮತ್ತು ಚಲಿಸದಂತೆ ಇರಿಸಿ. ಕಚ್ಚಿದ ಭಾಗವನ್ನು ಹೃದಯದ ಮಟ್ಟಕ್ಕಿಂತ ಕೆಳಗೆ ಇರಿಸಿ. ಗಾಯವನ್ನು ಕತ್ತರಿಸಬೇಡಿ ಅಥವಾ ಐಸ್ ಹಾಕಬೇಡಿ. ತಕ್ಷಣ 108ಗೆ ಕರೆ ಮಾಡಿ ಅಥವಾ ಹತ್ತಿರದ ಆಸ್ಪತ್ರೆಗೆ ಹೋಗಿ.",
           "audio_file": "audio/kn/emg_snake_bite_001.mp3"
         }
       },
@@ -38,21 +38,21 @@
       "severity_tier": "critical",
       "bypass_fuzzy_matching": true,
       "canonical_tokens": {
-        "en": ["chest pain", "heart pain", "tightness in chest", "pain in my chest"],
-        "hi": ["seene mein dard", "सीने में दर्द", "chest mein dard", "dil mein dard"],
-        "kn": ["edhe novu", "ಎದೆ ನೋವು", "yede novu", "chest novu"]
+        "en": ["chest pain", "heart pain", "tightness in chest", "pain in chest", "heart attack", "cardiac"],
+        "hi": ["seene mein dard", "सीने में दर्द", "chest mein dard", "dil mein dard", "heart attack", "dil ka dora"],
+        "kn": ["edhe novu", "ಎದೆ ನೋವು", "yede novu", "chest novu", "hrudaya novu", "ಹೃದಯ ನೋವು"]
       },
       "response": {
         "en": {
-          "text": "Chest pain can be serious. Sit upright, stay calm, and call 108 immediately or go to the nearest hospital now. Do not wait or try to walk long distances.",
+          "text": "Chest pain can be very serious. Sit upright, stay calm, and call 108 immediately or go to the nearest hospital now. Do not walk long distances. Do not wait.",
           "audio_file": "audio/en/emg_chest_pain_001.mp3"
         },
         "hi": {
-          "text": "सीने में दर्द गंभीर हो सकता है। सीधे बैठें, शांत रहें, और तुरंत 108 पर कॉल करें या नज़दीकी अस्पताल जाएं। इंतज़ार न करें या लंबी दूरी पैदल न चलें।",
+          "text": "सीने में दर्द बहुत गंभीर हो सकता है। सीधे बैठें, शांत रहें, और तुरंत 108 पर कॉल करें या नज़दीकी अस्पताल जाएं। लंबी दूरी पैदल न चलें। इंतज़ार न करें।",
           "audio_file": "audio/hi/emg_chest_pain_001.mp3"
         },
         "kn": {
-          "text": "ಎದೆ ನೋವು ಗಂಭೀರವಾಗಿರಬಹುದು. ನೆಟ್ಟಗೆ ಕುಳಿತುಕೊಳ್ಳಿ, ಶಾಂತವಾಗಿರಿ, ಮತ್ತು ತಕ್ಷಣ 108ಗೆ ಕರೆ ಮಾಡಿ ಅಥವಾ ಹತ್ತಿರದ ಆಸ್ಪತ್ರೆಗೆ ಹೋಗಿ. ಕಾಯಬೇಡಿ ಅಥವಾ ದೂರ ನಡೆಯಲು ಪ್ರಯತ್ನಿಸಬೇಡಿ.",
+          "text": "ಎದೆ ನೋವು ತುಂಬಾ ಗಂಭೀರವಾಗಿರಬಹುದು. ನೆಟ್ಟಗೆ ಕುಳಿತು, ಶಾಂತವಾಗಿದ್ದು, ತಕ್ಷಣ 108ಗೆ ಕರೆ ಮಾಡಿ ಅಥವಾ ಹತ್ತಿರದ ಆಸ್ಪತ್ರೆಗೆ ಹೋಗಿ. ದೂರ ನಡೆಯಬೇಡಿ. ಕಾಯಬೇಡಿ.",
           "audio_file": "audio/kn/emg_chest_pain_001.mp3"
         }
       },
@@ -65,22 +65,22 @@
       "severity_tier": "standard",
       "bypass_fuzzy_matching": false,
       "canonical_tokens": {
-        "en": ["fever", "high temperature", "running a temperature"],
-        "hi": ["bukhar", "बुखार", "jwar", "ज्वर", "taap"],
-        "kn": ["jwara", "ಜ್ವರ", "ಬಿಸಿ ಜ್ವರ", "shitha jwara"]
+        "en": ["fever", "high temperature", "running a temperature", "body heat", "pyrexia"],
+        "hi": ["bukhar", "बुखार", "jwar", "ज्वर", "taap", "tez bukhar", "garam badan"],
+        "kn": ["jwara", "ಜ್ವರ", "shita jwara", "maitala jwara", "ಮೈ ಬಿಸಿ", "mai bisi"]
       },
       "linked_concepts": ["DIS_DENGUE_001", "DIS_MALARIA_001"],
       "response": {
         "en": {
-          "text": "For mild fever, rest and drink plenty of fluids. Take Paracetamol if needed. If fever crosses 102°F or lasts more than 2 days, visit your nearest ASHA worker right away.",
+          "text": "For mild fever, rest and drink plenty of fluids. Paracetamol can help bring it down. If fever crosses 102°F or lasts more than 2 days, visit your nearest ASHA worker right away.",
           "audio_file": "audio/en/sym_fever_001.mp3"
         },
         "hi": {
-          "text": "हल्के बुखार में आराम करें और खूब तरल पदार्थ पिएं। ज़रूरत हो तो पैरासिटामोल लें। अगर बुखार 102°F से ऊपर जाए या 2 दिन से ज़्यादा रहे, तो तुरंत अपने नज़दीकी आशा कार्यकर्ता से मिलें।",
+          "text": "हल्के बुखार में आराम करें और खूब पानी-तरल पदार्थ पिएं। पैरासिटामोल बुखार कम करने में मदद कर सकती है। अगर बुखार 102°F से ऊपर जाए या 2 दिन से ज़्यादा रहे, तो तुरंत नज़दीकी आशा कार्यकर्ता से मिलें।",
           "audio_file": "audio/hi/sym_fever_001.mp3"
         },
         "kn": {
-          "text": "ಸ್ವಲ್ಪ ಜ್ವರಕ್ಕೆ ವಿಶ್ರಾಂತಿ ಪಡೆಯಿರಿ ಮತ್ತು ಸಾಕಷ್ಟು ದ್ರವ ಪದಾರ್ಥ ಸೇವಿಸಿ. ಅಗತ್ಯವಿದ್ದರೆ ಪ್ಯಾರಸಿಟಮಾಲ್ ತೆಗೆದುಕೊಳ್ಳಿ. ಜ್ವರ 102°F ದಾಟಿದರೆ ಅಥವಾ 2 ದಿನಗಳಿಗಿಂತ ಹೆಚ್ಚು ಇದ್ದರೆ, ತಕ್ಷಣ ನಿಮ್ಮ ಹತ್ತಿರದ ಆಶಾ ಕಾರ್ಯಕರ್ತೆಯನ್ನು ಭೇಟಿ ಮಾಡಿ.",
+          "text": "ಸ್ವಲ್ಪ ಜ್ವರಕ್ಕೆ ವಿಶ್ರಾಂತಿ ತೆಗೆದುಕೊಳ್ಳಿ ಮತ್ತು ಸಾಕಷ್ಟು ನೀರು ಕುಡಿಯಿರಿ. ಪ್ಯಾರಸಿಟಮಾಲ್ ಜ್ವರ ಕಡಿಮೆ ಮಾಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಜ್ವರ 102°F ದಾಟಿದರೆ ಅಥವಾ 2 ದಿನಗಳಿಗಿಂತ ಹೆಚ್ಚು ಇದ್ದರೆ, ತಕ್ಷಣ ನಿಮ್ಮ ಹತ್ತಿರದ ಆಶಾ ಕಾರ್ಯಕರ್ತೆಯನ್ನು ಭೇಟಿ ಮಾಡಿ.",
           "audio_file": "audio/kn/sym_fever_001.mp3"
         }
       },
@@ -93,26 +93,166 @@
       "severity_tier": "standard",
       "bypass_fuzzy_matching": false,
       "canonical_tokens": {
-        "en": ["headache", "head pain", "head ache"],
-        "hi": ["sir dard", "सिर दर्द", "sar dard", "sir dardh", "sir mein dard"],
-        "kn": ["tale novu", "ತಲೆ ನೋವು", "shir nolu", "tale nolu"]
+        "en": ["headache", "head pain", "head ache", "migraine", "head hurts"],
+        "hi": ["sir dard", "सिर दर्द", "sar dard", "sir mein dard", "sir dardh", "adhakpari"],
+        "kn": ["tale novu", "ಭಲೆ ನೋವು", "tale nolu", "shir nolu", "ತಲೆ ನೋವು"]
       },
       "linked_concepts": [],
       "response": {
         "en": {
-          "text": "For a mild headache, rest in a quiet, dark room and drink water. Take Paracetamol if needed. If the headache is very severe, sudden, or comes with vomiting or blurred vision, see your ASHA worker immediately.",
+          "text": "For a mild headache, rest in a quiet dark room and drink water. Paracetamol can help. If the headache is very sudden and severe, or comes with vomiting or blurred vision, see your ASHA worker immediately.",
           "audio_file": "audio/en/sym_headache_001.mp3"
         },
         "hi": {
-          "text": "हल्के सिर दर्द में किसी शांत, अंधेरे कमरे में आराम करें और पानी पिएं। ज़रूरत हो तो पैरासिटामोल लें। अगर सिर दर्द बहुत तेज़ हो, अचानक हो, या उल्टी या धुंधला दिखने के साथ हो, तो तुरंत अपने आशा कार्यकर्ता से मिलें।",
+          "text": "हल्के सिर दर्द में शांत और अंधेरे कमरे में आराम करें और पानी पिएं। पैरासिटामोल मदद कर सकती है। अगर सिर दर्द अचानक और बहुत तेज़ हो, या उल्टी या धुंधला दिखने के साथ हो, तो तुरंत आशा कार्यकर्ता से मिलें।",
           "audio_file": "audio/hi/sym_headache_001.mp3"
         },
         "kn": {
-          "text": "ಸ್ವಲ್ಪ ತಲೆ ನೋವಿಗೆ ಶಾಂತ, ಕತ್ತಲೆ ಕೋಣೆಯಲ್ಲಿ ವಿಶ್ರಾಂತಿ ಪಡೆಯಿರಿ ಮತ್ತು ನೀರು ಕುಡಿಯಿರಿ. ಅಗತ್ಯವಿದ್ದರೆ ಪ್ಯಾರಸಿಟಮಾಲ್ ತೆಗೆದುಕೊಳ್ಳಿ. ತಲೆ ನೋವು ತುಂಬಾ ತೀವ್ರವಾಗಿದ್ದರೆ, ಇದ್ದಕ್ಕಿದ್ದಂತೆ ಬಂದರೆ, ಅಥವಾ ವಾಂತಿ ಅಥವಾ ಮಸುಕು ಕಣ್ಣುಗಳ ಜೊತೆಗೆ ಇದ್ದರೆ, ತಕ್ಷಣ ನಿಮ್ಮ ಆಶಾ ಕಾರ್ಯಕರ್ತೆಯನ್ನು ಭೇಟಿ ಮಾಡಿ.",
+          "text": "ಸ್ವಲ್ಪ ತಲೆ ನೋವಿಗೆ ಶಾಂತ, ಕತ್ತಲೆ ಕೋಣೆಯಲ್ಲಿ ವಿಶ್ರಾಂತಿ ಪಡೆಯಿರಿ ಮತ್ತು ನೀರು ಕುಡಿಯಿರಿ. ಪ್ಯಾರಸಿಟಮಾಲ್ ಸಹಾಯ ಮಾಡಬಹುದು. ತಲೆ ನೋವು ಇದ್ದಕ್ಕಿದ್ದಂತೆ ತೀವ್ರವಾಗಿ ಬಂದರೆ, ವಾಂತಿ ಅಥವಾ ಮಸುಕು ಕಣ್ಣುಗಳ ಜೊತೆ ಇದ್ದರೆ, ತಕ್ಷಣ ಆಶಾ ಕಾರ್ಯಕರ್ತೆಯನ್ನು ಭೇಟಿ ಮಾಡಿ.",
           "audio_file": "audio/kn/sym_headache_001.mp3"
         }
       },
       "suggested_medicines": ["MED_PARA_500"],
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "SYM_STOMACH_PAIN_001",
+      "type": "symptom",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["stomach pain", "stomach ache", "abdominal pain", "tummy pain", "belly pain", "abdominal cramps", "stomach cramps", "gastric pain"],
+        "hi": ["pet dard", "पेट दर्द", "pet mein dard", "pet mein marod", "pet dardh", "pet ki takleef"],
+        "kn": ["hotte novu", "ಹೊಟ್ಟೆ ನೋವು", "hotte dukha", "hotte nolu", "udara novu"]
+      },
+      "linked_concepts": [],
+      "response": {
+        "en": {
+          "text": "For mild stomach pain or cramps, rest and avoid heavy or spicy food. Warm water can help. If the pain is severe, persistent, or comes with fever or vomiting, visit your nearest ASHA worker or health centre.",
+          "audio_file": "audio/en/sym_stomach_pain_001.mp3"
+        },
+        "hi": {
+          "text": "हल्के पेट दर्द या ऐंठन के लिए आराम करें और भारी या मसालेदार खाना न खाएं। गर्म पानी पीने से राहत मिल सकती है। अगर दर्द तेज़, लगातार हो या बुखार-उल्टी के साथ हो, तो नज़दीकी आशा कार्यकर्ता या स्वास्थ्य केंद्र जाएं।",
+          "audio_file": "audio/hi/sym_stomach_pain_001.mp3"
+        },
+        "kn": {
+          "text": "ಸ್ವಲ್ಪ ಹೊಟ್ಟೆ ನೋವಿಗೆ ವಿಶ್ರಾಂತಿ ತೆಗೆದುಕೊಳ್ಳಿ ಮತ್ತು ಭಾರ ಅಥವಾ ಮಸಾಲೆ ಆಹಾರ ತಿನ್ನಬೇಡಿ. ಬಿಸಿ ನೀರು ಸ್ವಲ್ಪ ಉಪಶಮನ ನೀಡಬಹುದು. ನೋವು ತೀವ್ರ, ನಿರಂತರ ಅಥವಾ ಜ್ವರ-ವಾಂತಿಯ ಜೊತೆ ಇದ್ದರೆ, ಹತ್ತಿರದ ಆಶಾ ಕಾರ್ಯಕರ್ತೆ ಅಥವಾ ಆರೋಗ್ಯ ಕೇಂದ್ರಕ್ಕೆ ಹೋಗಿ.",
+          "audio_file": "audio/kn/sym_stomach_pain_001.mp3"
+        }
+      },
+      "suggested_medicines": ["MED_DICY_10"],
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "SYM_DIARRHEA_001",
+      "type": "symptom",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["diarrhea", "loose motion", "loose stools", "watery stool", "frequent stool", "dehydration", "vomiting and loose motion"],
+        "hi": ["dast", "दस्त", "loose motion", "ulti aur dast", "pani wala dast", "paikhana", "dehydration"],
+        "kn": ["bhedi", "ಭೇದಿ", "beer bhedi", "neeranu bhedi", "vomiting mattu bhedi", "dehydration", "nirdjaleekarana"]
+      },
+      "linked_concepts": [],
+      "response": {
+        "en": {
+          "text": "For loose motions, drink ORS (oral rehydration solution) immediately to replace lost fluids and salts. Drink small sips of water frequently. Avoid heavy food. If diarrhea continues more than 2 days, or if you see blood in stool, visit your ASHA worker immediately.",
+          "audio_file": "audio/en/sym_diarrhea_001.mp3"
+        },
+        "hi": {
+          "text": "दस्त होने पर तुरंत ORS (ओरल रिहाइड्रेशन सॉल्यूशन) पिएं ताकि खोए हुए तरल और नमक की भरपाई हो सके। बार-बार थोड़ा-थोड़ा पानी पिएं। भारी खाना न खाएं। अगर दस्त 2 दिन से ज़्यादा जारी रहे या मल में खून आए, तो तुरंत आशा कार्यकर्ता से मिलें।",
+          "audio_file": "audio/hi/sym_diarrhea_001.mp3"
+        },
+        "kn": {
+          "text": "ಭೇದಿ ಆದಾಗ ಕಳೆದ ನೀರು ಮತ್ತು ಲವಣಗಳ ಪೂರೈಕೆಗೆ ತಕ್ಷಣ ORS ಕುಡಿಯಿರಿ. ಆಗಾಗ ಸ್ವಲ್ಪ ಸ್ವಲ್ಪ ನೀರು ಕುಡಿಯಿರಿ. ಭಾರ ಆಹಾರ ತಿನ್ನಬೇಡಿ. ಭೇದಿ 2 ದಿನಗಳಿಗಿಂತ ಹೆಚ್ಚು ಮುಂದುವರಿದರೆ ಅಥವಾ ಮಲದಲ್ಲಿ ರಕ್ತ ಕಂಡರೆ, ತಕ್ಷಣ ಆಶಾ ಕಾರ್ಯಕರ್ತೆಯನ್ನು ಭೇಟಿ ಮಾಡಿ.",
+          "audio_file": "audio/kn/sym_diarrhea_001.mp3"
+        }
+      },
+      "suggested_medicines": ["MED_ORS_001"],
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "SYM_ALLERGY_001",
+      "type": "symptom",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["allergy", "allergic reaction", "runny nose", "sneezing", "itchy eyes", "skin rash", "hives", "cold allergy", "dust allergy"],
+        "hi": ["allergy", "एलर्जी", "naak bagna", "naak behna", "chheenk aana", "kharish", "skin pe daane", "ankh mein khujli"],
+        "kn": ["allergy", "ಅಲರ್ಜಿ", "mookku saruva", "ಮೂಗು ಸೋರುವಿಕೆ", "seetha", "tvacha kalaku", "kannu kuliyuvike"]
+      },
+      "linked_concepts": [],
+      "response": {
+        "en": {
+          "text": "For mild allergy symptoms like runny nose or sneezing, avoid the source if known. An antihistamine like Cetirizine can provide relief. If you develop difficulty breathing or severe swelling, seek immediate medical help.",
+          "audio_file": "audio/en/sym_allergy_001.mp3"
+        },
+        "hi": {
+          "text": "हल्की एलर्जी जैसे बहती नाक या छींक के लिए, अगर कारण पता हो तो उससे दूर रहें। सेटीरिज़ीन जैसी एंटीहिस्टामाइन राहत दे सकती है। अगर सांस लेने में तकलीफ या तेज़ सूजन हो, तो तुरंत चिकित्सा सहायता लें।",
+          "audio_file": "audio/hi/sym_allergy_001.mp3"
+        },
+        "kn": {
+          "text": "ಮೂಗು ಸೋರುವಿಕೆ ಅಥವಾ ಸೀನುವಿಕೆಯಂತಹ ಸ್ವಲ್ಪ ಅಲರ್ಜಿ ಲಕ್ಷಣಗಳಿಗೆ, ಕಾರಣ ತಿಳಿದಿದ್ದರೆ ಅದನ್ನು ತಪ್ಪಿಸಿ. ಸೆಟಿರಿಜಿನ್ ಮಾತ್ರೆ ಉಪಶಮನ ನೀಡಬಹುದು. ಉಸಿರಾಟದಲ್ಲಿ ತೊಂದರೆ ಅಥವಾ ತೀವ್ರ ಊತ ಉಂಟಾದರೆ, ತಕ್ಷಣ ವೈದ್ಯಕೀಯ ಸಹಾಯ ಪಡೆಯಿರಿ.",
+          "audio_file": "audio/kn/sym_allergy_001.mp3"
+        }
+      },
+      "suggested_medicines": ["MED_CETI_10"],
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "SYM_ACIDITY_001",
+      "type": "symptom",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["acidity", "heartburn", "acid reflux", "indigestion", "gas", "bloating", "sour belching", "stomach gas"],
+        "hi": ["acidity", "एसिडिटी", "seene mein jalan", "gas banna", "khatta dakar", "badhaazmi", "pachan mein takleef"],
+        "kn": ["acidity", "ಆಮ್ಲೀಯತೆ", "hotte uridu", "gas aguva", "hoddina uridu", "ajeerna", "ಅಜೀರ್ಣ"]
+      },
+      "linked_concepts": [],
+      "response": {
+        "en": {
+          "text": "For acidity or heartburn, avoid spicy and oily food, eat smaller meals, and don't lie down immediately after eating. An antacid tablet can give quick relief. If you have severe burning or chest pain, see your ASHA worker.",
+          "audio_file": "audio/en/sym_acidity_001.mp3"
+        },
+        "hi": {
+          "text": "एसिडिटी या सीने में जलन के लिए मसालेदार और तेलीय खाना न खाएं, थोड़ा-थोड़ा खाएं और खाने के तुरंत बाद लेटें नहीं। एंटासिड टैबलेट से जल्दी राहत मिल सकती है। अगर तेज़ जलन या सीने में दर्द हो, तो आशा कार्यकर्ता से मिलें।",
+          "audio_file": "audio/hi/sym_acidity_001.mp3"
+        },
+        "kn": {
+          "text": "ಆಮ್ಲೀಯತೆ ಅಥವಾ ಎದೆ ಉರಿಗೆ ಮಸಾಲೆ ಮತ್ತು ಎಣ್ಣೆ ಆಹಾರ ತಿನ್ನಬೇಡಿ, ಸ್ವಲ್ಪ ಸ್ವಲ್ಪ ತಿನ್ನಿರಿ ಮತ್ತು ತಿಂದ ತಕ್ಷಣ ಮಲಗಬೇಡಿ. ಆಂಟಾಸಿಡ್ ಮಾತ್ರೆ ಬೇಗ ಉಪಶಮನ ನೀಡಬಹುದು. ತೀವ್ರ ಉರಿ ಅಥವಾ ಎದೆ ನೋವು ಇದ್ದರೆ, ಆಶಾ ಕಾರ್ಯಕರ್ತೆಯನ್ನು ನೋಡಿ.",
+          "audio_file": "audio/kn/sym_acidity_001.mp3"
+        }
+      },
+      "suggested_medicines": ["MED_ACID_001"],
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "SYM_WEAKNESS_001",
+      "type": "symptom",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["weakness", "fatigue", "tiredness", "dizziness", "feeling weak", "low energy", "anaemia symptoms", "breathlessness on exertion"],
+        "hi": ["kamzori", "कमज़ोरी", "thakan", "chakkar aana", "sans fulna", "khoon ki kami", "anemia"],
+        "kn": ["durbalta", "ಮೈ ದ್ರಬ್ಬಲತೆ", "sakkare tala", "chakkar baguva", "raktaheenataleye", "ಅನಿಮಿಯ", "shaktiheenataleye"]
+      },
+      "linked_concepts": [],
+      "response": {
+        "en": {
+          "text": "Weakness and tiredness can be caused by iron deficiency or anaemia, especially in women and pregnant mothers. Eat green leafy vegetables, pulses, and iron-rich foods. An Iron and Folic Acid supplement can help. If dizziness or breathlessness is severe, see your ASHA worker.",
+          "audio_file": "audio/en/sym_weakness_001.mp3"
+        },
+        "hi": {
+          "text": "कमज़ोरी और थकान आयरन की कमी या खून की कमी (एनीमिया) से हो सकती है, खासकर महिलाओं और गर्भवती माताओं में। हरी पत्तेदार सब्जियां, दालें और आयरन युक्त खाना खाएं। आयरन और फोलिक एसिड की गोली मदद कर सकती है। अगर चक्कर या सांस फूलने की समस्या गंभीर हो, तो आशा कार्यकर्ता से मिलें।",
+          "audio_file": "audio/hi/sym_weakness_001.mp3"
+        },
+        "kn": {
+          "text": "ಮೈ ದ್ರಬ್ಬಲತೆ ಮತ್ತು ಆಯಾಸ ಕಬ್ಬಿಣ ಕೊರತೆ ಅಥವಾ ರಕ್ತಹೀನತೆಯಿಂದ ಆಗಬಹುದು, ವಿಶೇಷವಾಗಿ ಮಹಿಳೆಯರಲ್ಲಿ ಮತ್ತು ಗರ್ಭಿಣಿ ತಾಯಂದಿರಲ್ಲಿ. ಹಸಿರು ಎಲೆ ತರಕಾರಿಗಳು, ಬೇಳೆ ಮತ್ತು ಕಬ್ಬಿಣ ಹೆಚ್ಚಿರುವ ಆಹಾರ ತಿನ್ನಿರಿ. ಐರನ್ ಮತ್ತು ಫೋಲಿಕ್ ಆಸಿಡ್ ಮಾತ್ರೆ ಸಹಾಯ ಮಾಡಬಹುದು. ತಲೆ ಸುತ್ತು ಅಥವಾ ಉಸಿರಾಟ ತೊಂದರೆ ತೀವ್ರವಾಗಿದ್ದರೆ, ಆಶಾ ಕಾರ್ಯಕರ್ತೆಯನ್ನು ಭೇಟಿ ಮಾಡಿ.",
+          "audio_file": "audio/kn/sym_weakness_001.mp3"
+        }
+      },
+      "suggested_medicines": ["MED_IRON_FA"],
       "escalation_flag": false
     },
     {
@@ -121,22 +261,22 @@
       "severity_tier": "standard",
       "bypass_fuzzy_matching": false,
       "canonical_tokens": {
-        "en": ["dengue", "dengue fever"],
-        "hi": ["dengue", "डेंगू", "dengu bukhar"],
+        "en": ["dengue", "dengue fever", "breakbone fever"],
+        "hi": ["dengue", "डेंगू", "dengu bukhar", "dengue fever"],
         "kn": ["dengue", "ಡೆಂಗ್ಯೂ", "dengue jwara"]
       },
       "linked_concepts": ["SYM_FEVER_001"],
       "response": {
         "en": {
-          "text": "Dengue spreads through mosquito bites and causes high fever, severe body pain, and rash. Watch for warning signs like bleeding gums, severe stomach pain, or vomiting blood — these need immediate hospital care. Remove standing water near your home to prevent mosquito breeding.",
+          "text": "Dengue spreads through mosquito bites and causes high fever, severe body pain, and rash. Watch for warning signs: bleeding gums, severe stomach pain, or vomiting blood — these need immediate hospital care. Remove standing water near your home to prevent mosquito breeding.",
           "audio_file": "audio/en/dis_dengue_001.mp3"
         },
         "hi": {
-          "text": "डेंगू मच्छर के काटने से फैलता है और इसमें तेज़ बुखार, बहुत तेज़ शरीर दर्द और चकत्ते होते हैं। मसूड़ों से खून आना, पेट में तेज़ दर्द, या खून की उल्टी जैसे चेतावनी संकेत दिखें तो तुरंत अस्पताल जाएं। घर के पास पानी जमा न होने दें ताकि मच्छर न पनपें।",
+          "text": "डेंगू मच्छर के काटने से फैलता है और इसमें तेज़ बुखार, बहुत तेज़ शरीर दर्द और चकत्ते होते हैं। मसूड़ों से खून, पेट में तेज़ दर्द, या खून की उल्टी जैसे खतरनाक संकेतों पर तुरंत अस्पताल जाएं। मच्छर न पनपें इसलिए घर के पास पानी जमा न होने दें।",
           "audio_file": "audio/hi/dis_dengue_001.mp3"
         },
         "kn": {
-          "text": "ಡೆಂಗ್ಯೂ ಸೊಳ್ಳೆ ಕಡಿತದಿಂದ ಹರಡುತ್ತದೆ ಮತ್ತು ತೀವ್ರ ಜ್ವರ, ತೀವ್ರ ಮೈ ನೋವು ಮತ್ತು ದದ್ದುಗಳನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ವಸಡುಗಳಿಂದ ರಕ್ತಸ್ರಾವ, ತೀವ್ರ ಹೊಟ್ಟೆ ನೋವು, ಅಥವಾ ರಕ್ತ ವಾಂತಿಯಂತಹ ಎಚ್ಚರಿಕೆ ಚಿಹ್ನೆಗಳಿದ್ದರೆ ತಕ್ಷಣ ಆಸ್ಪತ್ರೆಗೆ ಹೋಗಿ. ಸೊಳ್ಳೆ ಸಂತಾನೋತ್ಪತ್ತಿ ತಡೆಯಲು ಮನೆಯ ಬಳಿ ನೀರು ನಿಲ್ಲದಂತೆ ನೋಡಿಕೊಳ್ಳಿ.",
+          "text": "ಡೆಂಗ್ಯೂ ಸೊಳ್ಳೆ ಕಡಿತದಿಂದ ಹರಡುತ್ತದೆ ಮತ್ತು ತೀವ್ರ ಜ್ವರ, ತೀವ್ರ ಮೈ ನೋವು ಮತ್ತು ದದ್ದುಗಳನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ವಸಡುಗಳಿಂದ ರಕ್ತಸ್ರಾವ, ತೀವ್ರ ಹೊಟ್ಟೆ ನೋವು, ರಕ್ತ ವಾಂತಿ ಕಂಡರೆ ತಕ್ಷಣ ಆಸ್ಪತ್ರೆಗೆ ಹೋಗಿ. ಮನೆ ಬಳಿ ನೀರು ನಿಲ್ಲದಂತೆ ನೋಡಿಕೊಳ್ಳಿ.",
           "audio_file": "audio/kn/dis_dengue_001.mp3"
         }
       },
@@ -149,22 +289,22 @@
       "severity_tier": "standard",
       "bypass_fuzzy_matching": false,
       "canonical_tokens": {
-        "en": ["malaria", "malaria fever"],
-        "hi": ["malaria", "मलेरिया", "maleria"],
+        "en": ["malaria", "malaria fever", "malarial"],
+        "hi": ["malaria", "मलेरिया", "maleria", "malaria bukhar"],
         "kn": ["malaria", "ಮಲೇರಿಯಾ", "malaria jwara"]
       },
       "linked_concepts": ["SYM_FEVER_001"],
       "response": {
         "en": {
-          "text": "Malaria spreads through mosquito bites and causes fever with chills, sweating, and body aches that come in cycles. Get a blood test at your nearest health centre as soon as possible. Sleep under a mosquito net to prevent it.",
+          "text": "Malaria spreads through mosquito bites and causes cyclic fever with chills, sweating, and body aches. Get a blood test at your nearest health centre as soon as possible. Always sleep under a mosquito net.",
           "audio_file": "audio/en/dis_malaria_001.mp3"
         },
         "hi": {
-          "text": "मलेरिया मच्छर के काटने से फैलता है और इसमें बुखार के साथ ठंड लगना, पसीना आना और शरीर दर्द चक्रों में होता है। जल्द से जल्द अपने नज़दीकी स्वास्थ्य केंद्र पर खून की जांच कराएं। बचाव के लिए मच्छरदानी के नीचे सोएं।",
+          "text": "मलेरिया मच्छर के काटने से फैलता है और इसमें ठंड लगना, पसीना आना और शरीर दर्द के साथ बुखार आता-जाता रहता है। जल्द से जल्द नज़दीकी स्वास्थ्य केंद्र पर खून की जांच कराएं। हमेशा मच्छरदानी के नीचे सोएं।",
           "audio_file": "audio/hi/dis_malaria_001.mp3"
         },
         "kn": {
-          "text": "ಮಲೇರಿಯಾ ಸೊಳ್ಳೆ ಕಡಿತದಿಂದ ಹರಡುತ್ತದೆ ಮತ್ತು ಚಳಿ, ಬೆವರು, ಮತ್ತು ಆವರ್ತಕ ಮೈ ನೋವಿನೊಂದಿಗೆ ಜ್ವರ ಉಂಟುಮಾಡುತ್ತದೆ. ಆದಷ್ಟು ಬೇಗ ನಿಮ್ಮ ಹತ್ತಿರದ ಆರೋಗ್ಯ ಕೇಂದ್ರದಲ್ಲಿ ರಕ್ತ ಪರೀಕ್ಷೆ ಮಾಡಿಸಿ. ತಡೆಯಲು ಸೊಳ್ಳೆ ಪರದೆಯ ಕೆಳಗೆ ಮಲಗಿ.",
+          "text": "ಮಲೇರಿಯಾ ಸೊಳ್ಳೆ ಕಡಿತದಿಂದ ಹರಡುತ್ತದೆ ಮತ್ತು ಚಳಿ, ಬೆವರು, ಮತ್ತು ಮೈ ನೋವಿನೊಂದಿಗೆ ಆವರ್ತಕ ಜ್ವರ ಉಂಟಾಗುತ್ತದೆ. ಆದಷ್ಟು ಬೇಗ ಹತ್ತಿರದ ಆರೋಗ್ಯ ಕೇಂದ್ರದಲ್ಲಿ ರಕ್ತ ಪರೀಕ್ಷೆ ಮಾಡಿಸಿ. ಯಾವಾಗಲೂ ಸೊಳ್ಳೆ ಪರದೆಯ ಕೆಳಗೆ ಮಲಗಿ.",
           "audio_file": "audio/kn/dis_malaria_001.mp3"
         }
       },
@@ -177,18 +317,18 @@
       "severity_tier": "standard",
       "bypass_fuzzy_matching": false,
       "canonical_tokens": {
-        "en": ["bcg", "bcg vaccine", "bcg injection"],
-        "hi": ["bcg", "बीसीजी", "bcg टीका", "bcg ka tika"],
-        "kn": ["bcg", "ಬಿಸಿಜಿ", "bcg ಲಸಿಕೆ"]
+        "en": ["bcg", "bcg vaccine", "bcg injection", "bcg shot", "tuberculosis vaccine", "tb vaccine", "tb shot", "vaccination"],
+        "hi": ["bcg", "बीसीजी", "bcg tika", "bcg ka tika", "tb ka tika", "kshay rog ka tika", "teeka"],
+        "kn": ["bcg", "ಬಿಸಿಜಿ", "bcg lasike", "bcg lasi", "kshayroga lasike", "tb lasike", "lasike"]
       },
       "linked_concepts": [],
       "response": {
         "en": {
-          "text": "BCG vaccine protects newborns against tuberculosis. It is given as a single shot, usually within days of birth. Visit your nearest ASHA worker or health centre to get it for your child.",
+          "text": "BCG vaccine protects newborns against tuberculosis. It is given as a single injection, usually within a few days of birth. Visit your nearest ASHA worker or health centre to get it for your child.",
           "audio_file": "audio/en/vac_bcg_001.mp3"
         },
         "hi": {
-          "text": "बीसीजी टीका नवजात शिशुओं को टीबी से बचाता है। यह आमतौर पर जन्म के कुछ दिनों के भीतर एक बार दिया जाता है। अपने बच्चे को यह टीका लगवाने के लिए नज़दीकी आशा कार्यकर्ता या स्वास्थ्य केंद्र पर जाएं।",
+          "text": "बीसीजी टीका नवजात शिशुओं को टीबी से बचाता है। यह आमतौर पर जन्म के कुछ दिनों के भीतर एक बार लगाया जाता है। अपने बच्चे को यह टीका लगवाने के लिए नज़दीकी आशा कार्यकर्ता या स्वास्थ्य केंद्र जाएं।",
           "audio_file": "audio/hi/vac_bcg_001.mp3"
         },
         "kn": {
@@ -196,7 +336,8 @@
           "audio_file": "audio/kn/vac_bcg_001.mp3"
         }
       },
-      "escalation_flag": false
+      "escalation_flag": false,
+      "requires_location": true
     },
     {
       "concept_id": "MED_PARA_500",
@@ -204,9 +345,9 @@
       "severity_tier": "standard",
       "bypass_fuzzy_matching": false,
       "canonical_tokens": {
-        "en": ["paracetamol", "para", "crocin", "dolo"],
-        "hi": ["paracetamol", "पैरासिटामोल", "para tablet"],
-        "kn": ["paracetamol", "ಪ್ಯಾರಸಿಟಮಾಲ್"]
+        "en": ["paracetamol", "para", "crocin", "dolo", "dolo 650", "calpol", "metacin", "fever tablet", "pain tablet"],
+        "hi": ["paracetamol", "पैरासिटामोल", "para tablet", "dolo", "crocin", "bukhar ki goli"],
+        "kn": ["paracetamol", "ಪ್ಯಾರಸಿಟಮಾಲ್", "dolo", "crocin", "jwara matra"]
       },
       "linked_concepts": ["SYM_FEVER_001", "SYM_HEADACHE_001"],
       "response": {
@@ -215,12 +356,180 @@
           "audio_file": "audio/en/med_para_500.mp3"
         },
         "hi": {
-          "text": "पैरासिटामोल 500mg बुखार और हल्के दर्द में मदद करता है। कृपया वर्तमान स्टॉक जांचने के लिए नीचे अपना नज़दीकी आशा केंद्र चुनें।",
+          "text": "पैरासिटामोल 500mg बुखार और हल्के दर्द में मदद करती है। कृपया स्टॉक जांचने के लिए नीचे अपना नज़दीकी आशा केंद्र चुनें।",
           "audio_file": "audio/hi/med_para_500.mp3"
         },
         "kn": {
-          "text": "ಪ್ಯಾರಸಿಟಮಾಲ್ 500mg ಜ್ವರ ಮತ್ತು ಸ್ವಲ್ಪ ನೋವಿಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಪ್ರಸ್ತುತ ಸ್ಟಾಕ್ ಪರಿಶೀಲಿಸಲು ದಯವಿಟ್ಟು ಕೆಳಗೆ ನಿಮ್ಮ ಹತ್ತಿರದ ಆಶಾ ಕೇಂದ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+          "text": "ಪ್ಯಾರಸಿಟಮಾಲ್ 500mg ಜ್ವರ ಮತ್ತು ಸ್ವಲ್ಪ ನೋವಿಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಸ್ಟಾಕ್ ಪರಿಶೀಲಿಸಲು ದಯವಿಟ್ಟು ಕೆಳಗೆ ನಿಮ್ಮ ಹತ್ತಿರದ ಆಶಾ ಕೇಂದ್ರ ಆಯ್ಕೆ ಮಾಡಿ.",
           "audio_file": "audio/kn/med_para_500.mp3"
+        }
+      },
+      "requires_location": true,
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "MED_DICY_10",
+      "type": "medicine",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["dicyclomine", "cyclopam", "dicy", "stomach cramp tablet", "antispasmodic", "spasmo proxyvon", "meftal spas"],
+        "hi": ["dicyclomine", "डाइसाइक्लोमिन", "cyclopam", "pet dard ki goli", "pet ki marod ki dawa"],
+        "kn": ["dicyclomine", "ಡೈಸೈಕ್ಲೋಮಿನ್", "cyclopam", "hotte novu matra", "hotte marod matra"]
+      },
+      "linked_concepts": ["SYM_STOMACH_PAIN_001"],
+      "response": {
+        "en": {
+          "text": "Dicyclomine 10mg helps relieve stomach cramps and spasms. Take it after food. Please select your nearest ASHA centre below to check current stock.",
+          "audio_file": "audio/en/med_dicy_10.mp3"
+        },
+        "hi": {
+          "text": "डाइसाइक्लोमिन 10mg पेट में ऐंठन और मरोड़ से राहत दिलाती है। इसे खाने के बाद लें। कृपया स्टॉक जांचने के लिए नीचे अपना नज़दीकी आशा केंद्र चुनें।",
+          "audio_file": "audio/hi/med_dicy_10.mp3"
+        },
+        "kn": {
+          "text": "ಡೈಸೈಕ್ಲೋಮಿನ್ 10mg ಹೊಟ್ಟೆ ಸೆಳೆತ ಮತ್ತು ಖಿಚ್ಚುವಿಕೆ ಕಡಿಮೆ ಮಾಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಊಟದ ನಂತರ ತೆಗೆದುಕೊಳ್ಳಿ. ಸ್ಟಾಕ್ ಪರಿಶೀಲಿಸಲು ಕೆಳಗೆ ನಿಮ್ಮ ಹತ್ತಿರದ ಆಶಾ ಕೇಂದ್ರ ಆಯ್ಕೆ ಮಾಡಿ.",
+          "audio_file": "audio/kn/med_dicy_10.mp3"
+        }
+      },
+      "requires_location": true,
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "MED_ORS_001",
+      "type": "medicine",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["ors", "oral rehydration", "electral", "rehydration salts", "ors packet", "ors powder", "electrolyte", "hydration powder"],
+        "hi": ["ors", "ओआरएस", "electral", "jeevan jal", "nimbu namak pani", "rehydration", "ors packet"],
+        "kn": ["ors", "ಓಆರ್‌ಎಸ್", "electral", "jeevan jala", "ors packet", "niru uppu sakkare"]
+      },
+      "linked_concepts": ["SYM_DIARRHEA_001"],
+      "response": {
+        "en": {
+          "text": "ORS (Oral Rehydration Salts) replaces fluids and electrolytes lost during diarrhea or vomiting. Mix one sachet in one litre of clean water and sip frequently. Please select your nearest ASHA centre below to check current stock.",
+          "audio_file": "audio/en/med_ors_001.mp3"
+        },
+        "hi": {
+          "text": "ORS (ओरल रिहाइड्रेशन साल्ट) दस्त या उल्टी में खोए हुए तरल और इलेक्ट्रोलाइट को वापस लाता है। एक पैकेट को एक लीटर साफ़ पानी में मिलाएं और थोड़ा-थोड़ा पिएं। कृपया स्टॉक जांचने के लिए नीचे अपना नज़दीकी आशा केंद्र चुनें।",
+          "audio_file": "audio/hi/med_ors_001.mp3"
+        },
+        "kn": {
+          "text": "ORS (ಓರಲ್ ರಿಹೈಡ್ರೇಶನ್ ಸಾಲ್ಟ್) ಭೇದಿ ಅಥವಾ ವಾಂತಿಯಲ್ಲಿ ಕಳೆದ ನೀರು ಮತ್ತು ಲವಣಗಳನ್ನು ಮರಳಿ ತರುತ್ತದೆ. ಒಂದು ಪ್ಯಾಕೇಟ್ ಅನ್ನು ಒಂದು ಲೀಟರ್ ಶುದ್ಧ ನೀರಿನಲ್ಲಿ ಬೆರೆಸಿ ಸ್ವಲ್ಪ ಸ್ವಲ್ಪ ಕುಡಿಯಿರಿ. ಸ್ಟಾಕ್ ಪರಿಶೀಲಿಸಲು ಕೆಳಗೆ ನಿಮ್ಮ ಹತ್ತಿರದ ಆಶಾ ಕೇಂದ್ರ ಆಯ್ಕೆ ಮಾಡಿ.",
+          "audio_file": "audio/kn/med_ors_001.mp3"
+        }
+      },
+      "requires_location": true,
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "MED_AMOX_250",
+      "type": "medicine",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["amoxicillin", "amox", "amoxil", "antibiotic", "bacterial infection tablet", "throat infection medicine", "amoxyclav"],
+        "hi": ["amoxicillin", "एमोक्सिसिलिन", "antibiotic", "amox", "gale ke infection ki dawa", "bacterial infection ki dawa"],
+        "kn": ["amoxicillin", "ಅಮೋಕ್ಸಿಸಿಲಿನ್", "antibiotic", "gantalu kashi matra", "bacterial samkramana matra"]
+      },
+      "linked_concepts": [],
+      "response": {
+        "en": {
+          "text": "Amoxicillin 250mg is an antibiotic used for bacterial infections such as throat, ear, or chest infections. It must be prescribed by a health worker. Complete the full course even if you feel better. Please select your nearest ASHA centre below to check current stock.",
+          "audio_file": "audio/en/med_amox_250.mp3"
+        },
+        "hi": {
+          "text": "एमोक्सिसिलिन 250mg एक एंटीबायोटिक है जो गले, कान या सीने के बैक्टीरियल संक्रमण में काम आती है। इसे स्वास्थ्य कार्यकर्ता द्वारा लिखवाना ज़रूरी है। बेहतर महसूस होने पर भी पूरा कोर्स पूरा करें। कृपया स्टॉक जांचने के लिए नीचे अपना नज़दीकी आशा केंद्र चुनें।",
+          "audio_file": "audio/hi/med_amox_250.mp3"
+        },
+        "kn": {
+          "text": "ಅಮೋಕ್ಸಿಸಿಲಿನ್ 250mg ಗಂಟಲು, ಕಿವಿ ಅಥವಾ ಎದೆಯ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಸೋಂಕಿಗೆ ಬಳಸಲಾಗುವ ಆಂಟಿಬಯೋಟಿಕ್ ಆಗಿದೆ. ಇದನ್ನು ಆರೋಗ್ಯ ಕಾರ್ಯಕರ್ತರಿಂದ ಶಿಫಾರಸು ಮಾಡಿಸಿಕೊಳ್ಳಬೇಕು. ಉತ್ತಮ ಅನಿಸಿದರೂ ಸಂಪೂರ್ಣ ಕೋರ್ಸ್ ಮಾಡಿ. ಸ್ಟಾಕ್ ಪರಿಶೀಲಿಸಲು ಕೆಳಗೆ ನಿಮ್ಮ ಹತ್ತಿರದ ಆಶಾ ಕೇಂದ್ರ ಆಯ್ಕೆ ಮಾಡಿ.",
+          "audio_file": "audio/kn/med_amox_250.mp3"
+        }
+      },
+      "requires_location": true,
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "MED_IRON_FA",
+      "type": "medicine",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["iron folic acid", "ifa tablet", "iron tablet", "folic acid", "anaemia tablet", "pregnancy vitamin", "ferrous sulphate", "iron supplement"],
+        "hi": ["iron folic acid", "आयरन फोलिक एसिड", "ifa tablet", "iron ki goli", "khoon badhane ki goli", "garbhavastha ki vitamin", "anaemia ki dawa"],
+        "kn": ["iron folic acid", "ಐರನ್ ಫೋಲಿಕ್ ಆಸಿಡ್", "ifa tablet", "kabbina matra", "rakta hechisuvudu", "garbhiNi matra", "anemia matra"]
+      },
+      "linked_concepts": ["SYM_WEAKNESS_001"],
+      "response": {
+        "en": {
+          "text": "Iron and Folic Acid tablets help prevent and treat anaemia, especially important during pregnancy. Take with water after a meal. Avoid taking with tea or milk. Please select your nearest ASHA centre below to check current stock.",
+          "audio_file": "audio/en/med_iron_fa.mp3"
+        },
+        "hi": {
+          "text": "आयरन और फोलिक एसिड की गोलियां एनीमिया से बचाव और इलाज में मदद करती हैं, खासकर गर्भावस्था में। इसे खाने के बाद पानी के साथ लें। चाय या दूध के साथ न लें। कृपया स्टॉक जांचने के लिए नीचे अपना नज़दीकी आशा केंद्र चुनें।",
+          "audio_file": "audio/hi/med_iron_fa.mp3"
+        },
+        "kn": {
+          "text": "ಐರನ್ ಮತ್ತು ಫೋಲಿಕ್ ಆಸಿಡ್ ಮಾತ್ರೆಗಳು ರಕ್ತಹೀನತೆ ತಡೆಗಟ್ಟಲು ಮತ್ತು ಚಿಕಿತ್ಸೆಗೆ ಸಹಾಯ ಮಾಡುತ್ತವೆ, ವಿಶೇಷವಾಗಿ ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ. ಊಟದ ನಂತರ ನೀರಿನ ಜೊತೆ ತೆಗೆದುಕೊಳ್ಳಿ. ಚಹಾ ಅಥವಾ ಹಾಲಿನ ಜೊತೆ ತೆಗೆದುಕೊಳ್ಳಬೇಡಿ. ಸ್ಟಾಕ್ ಪರಿಶೀಲಿಸಲು ಕೆಳಗೆ ನಿಮ್ಮ ಹತ್ತಿರದ ಆಶಾ ಕೇಂದ್ರ ಆಯ್ಕೆ ಮಾಡಿ.",
+          "audio_file": "audio/kn/med_iron_fa.mp3"
+        }
+      },
+      "requires_location": true,
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "MED_CETI_10",
+      "type": "medicine",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["cetirizine", "cetriz", "cetzip", "cetzine", "antihistamine", "allergy tablet", "zyrtec", "alerid"],
+        "hi": ["cetirizine", "सेटीरिज़ीन", "cetzip", "allergy ki goli", "antihistamine", "naak bagne ki dawa", "khujli ki goli"],
+        "kn": ["cetirizine", "ಸೆಟಿರಿಜಿನ್", "cetzip", "allergy matra", "mookku saruva matra", "kalaku matra"]
+      },
+      "linked_concepts": ["SYM_ALLERGY_001"],
+      "response": {
+        "en": {
+          "text": "Cetirizine 10mg relieves allergy symptoms such as runny nose, sneezing, and itchy eyes. Take one tablet at night as it may cause drowsiness. Please select your nearest ASHA centre below to check current stock.",
+          "audio_file": "audio/en/med_ceti_10.mp3"
+        },
+        "hi": {
+          "text": "सेटीरिज़ीन 10mg बहती नाक, छींक और आंखों में खुजली जैसी एलर्जी के लक्षणों से राहत देती है। यह नींद ला सकती है इसलिए रात में एक गोली लें। कृपया स्टॉक जांचने के लिए नीचे अपना नज़दीकी आशा केंद्र चुनें।",
+          "audio_file": "audio/hi/med_ceti_10.mp3"
+        },
+        "kn": {
+          "text": "ಸೆಟಿರಿಜಿನ್ 10mg ಮೂಗು ಸೋರುವಿಕೆ, ಸೀನುವಿಕೆ ಮತ್ತು ಕಣ್ಣು ಕುಳಿಯುವಿಕೆಯಂತಹ ಅಲರ್ಜಿ ಲಕ್ಷಣಗಳನ್ನು ನಿವಾರಿಸುತ್ತದೆ. ಇದು ನಿದ್ರಾಹೀನತೆ ತರಬಹುದಾದ್ದರಿಂದ ರಾತ್ರಿ ಒಂದು ಮಾತ್ರೆ ತೆಗೆದುಕೊಳ್ಳಿ. ಸ್ಟಾಕ್ ಪರಿಶೀಲಿಸಲು ಕೆಳಗೆ ನಿಮ್ಮ ಹತ್ತಿರದ ಆಶಾ ಕೇಂದ್ರ ಆಯ್ಕೆ ಮಾಡಿ.",
+          "audio_file": "audio/kn/med_ceti_10.mp3"
+        }
+      },
+      "requires_location": true,
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "MED_ACID_001",
+      "type": "medicine",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["antacid", "digene", "gelusil", "pudin hara", "eno", "acidity tablet", "heartburn tablet", "gas tablet", "indigestion tablet"],
+        "hi": ["antacid", "एंटासिड", "digene", "gelusil", "eno", "acidity ki dawa", "gas ki goli", "seene ki jalan ki dawa"],
+        "kn": ["antacid", "ಆಂಟಾಸಿಡ್", "digene", "gelusil", "acidity matra", "gas matra", "hotte uridu matra", "ajeerna matra"]
+      },
+      "linked_concepts": ["SYM_ACIDITY_001"],
+      "response": {
+        "en": {
+          "text": "Antacid tablets or gel quickly relieve acidity, heartburn, and gas. Take after meals as needed. Avoid lying down immediately after eating and reduce spicy foods. Please select your nearest ASHA centre below to check current stock.",
+          "audio_file": "audio/en/med_acid_001.mp3"
+        },
+        "hi": {
+          "text": "एंटासिड टैबलेट या जेल एसिडिटी, सीने में जलन और गैस से तुरंत राहत देते हैं। ज़रूरत पड़ने पर खाने के बाद लें। खाने के बाद तुरंत न लेटें और मसालेदार खाना कम करें। कृपया स्टॉक जांचने के लिए नीचे अपना नज़दीकी आशा केंद्र चुनें।",
+          "audio_file": "audio/hi/med_acid_001.mp3"
+        },
+        "kn": {
+          "text": "ಆಂಟಾಸಿಡ್ ಮಾತ್ರೆ ಅಥವಾ ಜೆಲ್ ಆಮ್ಲೀಯತೆ, ಎದೆ ಉರಿ ಮತ್ತು ಅನಿಲದಿಂದ ತ್ವರಿತ ಉಪಶಮನ ನೀಡುತ್ತದೆ. ಅಗತ್ಯವಿದ್ದಾಗ ಊಟದ ನಂತರ ತೆಗೆದುಕೊಳ್ಳಿ. ಊಟದ ನಂತರ ತಕ್ಷಣ ಮಲಗಬೇಡಿ ಮತ್ತು ಮಸಾಲೆ ಆಹಾರ ಕಡಿಮೆ ಮಾಡಿ. ಸ್ಟಾಕ್ ಪರಿಶೀಲಿಸಲು ಕೆಳಗೆ ನಿಮ್ಮ ಹತ್ತಿರದ ಆಶಾ ಕೇಂದ್ರ ಆಯ್ಕೆ ಮಾಡಿ.",
+          "audio_file": "audio/kn/med_acid_001.mp3"
         }
       },
       "requires_location": true,
