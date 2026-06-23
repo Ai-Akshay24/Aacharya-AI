@@ -1,0 +1,69 @@
+# Aacharya AI — Backend Requirements (Local Deterministic Engine)
+# ===================================================================
+# Stripped of all generative-LLM, RAG, and ML infrastructure:
+# google-generativeai, langchain*, langgraph*, chromadb, torch,
+# sentence-transformers, transformers, scikit-learn, scipy, pandas,
+# huggingface-hub, onnxruntime, and their transitive dependencies are
+# REMOVED. None of these are imported anywhere in the refactored
+# codebase (auth.py, matcher.py, models.py, inventory_routing.py).
+#
+# Versions below are kept identical to the prior working environment
+# where the package was already in use (FastAPI, SQLModel, JWT/bcrypt
+# stack), to avoid introducing new compatibility risk during this cutover.
+#
+# KNOWN ISSUE — read before installing:
+# bcrypt>=4.1 has a passlib compatibility bug (passlib calls
+# `bcrypt.__about__.__version__`, which newer bcrypt builds removed).
+# This was hit and confirmed during testing of auth.py / seed_db.py in
+# this session. Pinning bcrypt==4.0.1 here to avoid it; do not bump
+# bcrypt without re-testing password hashing end-to-end.
+
+# --- Core web framework ---
+fastapi==0.110.1
+starlette==0.37.2
+uvicorn==0.25.0
+python-multipart==0.0.20
+httptools==0.7.1
+watchfiles==1.1.1
+websockets==15.0.1
+
+# --- Data validation ---
+pydantic==2.12.3
+pydantic-settings==2.11.0
+pydantic_core==2.41.4
+annotated-types==0.7.0
+email-validator==2.3.0
+typing_extensions==4.15.0
+typing-inspection==0.4.2
+
+# --- Database / ORM ---
+sqlmodel==0.0.27
+SQLAlchemy==2.0.44
+
+# --- Authentication & security ---
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-jose==3.5.0
+cryptography==46.0.3
+ecdsa==0.19.1
+pyasn1==0.6.1
+rsa==4.9.1
+
+# --- Local NLP matching pipeline (matcher.py) ---
+rapidfuzz==3.14.5
+
+# --- Config / environment ---
+python-dotenv==1.2.1
+
+# --- HTTP utilities (used by FastAPI/uvicorn stack, kept for compatibility) ---
+anyio==4.11.0
+h11==0.16.0
+sniffio==1.3.1
+idna==3.11
+certifi==2025.10.5
+
+# --- Dev / testing (optional — safe to omit in production builds) ---
+pytest==8.4.2
+httpx==0.28.1
+black==25.9.0
+flake8==7.3.0

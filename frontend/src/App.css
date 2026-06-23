@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --deep-blue: #1E3A8A;
+  --electric-teal: #14B8A6;
+  --bg-light: #F8FAFC;
+  --bg-shade: #F1F5F9;
+  --text-dark: #1E293B;
+  --text-light: #64748B;
+}
+
+.bg-deep-blue {
+  background-color: var(--deep-blue);
+}
+
+.text-deep-blue {
+  color: var(--deep-blue);
+}
+
+.bg-electric-teal {
+  background-color: var(--electric-teal);
+}
+
+.text-electric-teal {
+  color: var(--electric-teal);
+}
+
+.border-deep-blue {
+  border-color: var(--deep-blue);
+}
+
+.border-electric-teal {
+  border-color: var(--electric-teal);
+}
+
+.hover\:bg-deep-blue-dark:hover {
+  background-color: #1E40AF;
+}
+
+.hover\:bg-teal-600:hover {
+  background-color: #0D9488;
+}
+
+.hover\:border-electric-teal:hover {
+  border-color: var(--electric-teal);
+}
+
+.hover\:text-electric-teal:hover {
+  color: var(--electric-teal);
+}
+
+/* Chat bubbles styling */
+.chat-bubble-ai {
+  background-color: #F1F5F9;
+  border-radius: 18px;
+  border-top-left-radius: 4px;
+}
+
+.chat-bubble-user {
+  background-color: var(--electric-teal);
+  border-radius: 18px;
+  border-top-right-radius: 4px;
+}

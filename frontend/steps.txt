@@ -1,0 +1,7 @@
+Terminal 1-
+cd backend
+.\venv\Scripts\Activate.ps1
+uvicorn auth:app --reload
+
+In Terminal 2-
+yarn start

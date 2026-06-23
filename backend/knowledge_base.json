@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "languages": ["en", "hi", "kn"],
+    "description": "Deterministic, pre-vetted multilingual concept dictionary for Aacharya AI's local matching pipeline. No generative content. All response strings are hand-authored and reviewed."
+  },
+  "concepts": [
+    {
+      "concept_id": "EMG_SNAKE_BITE_001",
+      "type": "emergency",
+      "severity_tier": "critical",
+      "bypass_fuzzy_matching": true,
+      "canonical_tokens": {
+        "en": ["snake bite", "snakebite", "bitten by snake", "snake bit me"],
+        "hi": ["saanp ne kaata", "साँप ने काटा", "saap kata", "snake bite"],
+        "kn": ["havu kaditide", "ಹಾವು ಕಡಿತ", "havu kadithu", "snake bite"]
+      },
+      "response": {
+        "en": {
+          "text": "This is a medical emergency. Keep the person still and calm, keep the bitten area below heart level, and do not cut, suck, or apply ice to the wound. Call 108 immediately or rush to the nearest hospital now.",
+          "audio_file": "audio/en/emg_snake_bite_001.mp3"
+        },
+        "hi": {
+          "text": "यह एक मेडिकल इमरजेंसी है। व्यक्ति को शांत और स्थिर रखें, काटे हुए हिस्से को दिल के स्तर से नीचे रखें, और घाव को काटें, चूसें या बर्फ न लगाएं। तुरंत 108 पर कॉल करें या नज़दीकी अस्पताल जाएं।",
+          "audio_file": "audio/hi/emg_snake_bite_001.mp3"
+        },
+        "kn": {
+          "text": "ಇದು ತುರ್ತು ವೈದ್ಯಕೀಯ ಪರಿಸ್ಥಿತಿ. ವ್ಯಕ್ತಿಯನ್ನು ಶಾಂತವಾಗಿ ಮತ್ತು ಚಲಿಸದಂತೆ ಇರಿಸಿ, ಕಚ್ಚಿದ ಭಾಗವನ್ನು ಹೃದಯದ ಮಟ್ಟಕ್ಕಿಂತ ಕೆಳಗೆ ಇರಿಸಿ, ಗಾಯವನ್ನು ಕತ್ತರಿಸಬೇಡಿ, ಹೀರಬೇಡಿ ಅಥವಾ ಐಸ್ ಹಾಕಬೇಡಿ. ತಕ್ಷಣ 108ಗೆ ಕರೆ ಮಾಡಿ ಅಥವಾ ಹತ್ತಿರದ ಆಸ್ಪತ್ರೆಗೆ ಹೋಗಿ.",
+          "audio_file": "audio/kn/emg_snake_bite_001.mp3"
+        }
+      },
+      "escalation_flag": true,
+      "escalation_action": "DISPLAY_EMERGENCY_NUMBER_108"
+    },
+    {
+      "concept_id": "EMG_CHEST_PAIN_001",
+      "type": "emergency",
+      "severity_tier": "critical",
+      "bypass_fuzzy_matching": true,
+      "canonical_tokens": {
+        "en": ["chest pain", "heart pain", "tightness in chest", "pain in my chest"],
+        "hi": ["seene mein dard", "सीने में दर्द", "chest mein dard", "dil mein dard"],
+        "kn": ["edhe novu", "ಎದೆ ನೋವು", "yede novu", "chest novu"]
+      },
+      "response": {
+        "en": {
+          "text": "Chest pain can be serious. Sit upright, stay calm, and call 108 immediately or go to the nearest hospital now. Do not wait or try to walk long distances.",
+          "audio_file": "audio/en/emg_chest_pain_001.mp3"
+        },
+        "hi": {
+          "text": "सीने में दर्द गंभीर हो सकता है। सीधे बैठें, शांत रहें, और तुरंत 108 पर कॉल करें या नज़दीकी अस्पताल जाएं। इंतज़ार न करें या लंबी दूरी पैदल न चलें।",
+          "audio_file": "audio/hi/emg_chest_pain_001.mp3"
+        },
+        "kn": {
+          "text": "ಎದೆ ನೋವು ಗಂಭೀರವಾಗಿರಬಹುದು. ನೆಟ್ಟಗೆ ಕುಳಿತುಕೊಳ್ಳಿ, ಶಾಂತವಾಗಿರಿ, ಮತ್ತು ತಕ್ಷಣ 108ಗೆ ಕರೆ ಮಾಡಿ ಅಥವಾ ಹತ್ತಿರದ ಆಸ್ಪತ್ರೆಗೆ ಹೋಗಿ. ಕಾಯಬೇಡಿ ಅಥವಾ ದೂರ ನಡೆಯಲು ಪ್ರಯತ್ನಿಸಬೇಡಿ.",
+          "audio_file": "audio/kn/emg_chest_pain_001.mp3"
+        }
+      },
+      "escalation_flag": true,
+      "escalation_action": "DISPLAY_EMERGENCY_NUMBER_108"
+    },
+    {
+      "concept_id": "SYM_FEVER_001",
+      "type": "symptom",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["fever", "high temperature", "running a temperature"],
+        "hi": ["bukhar", "बुखार", "jwar", "ज्वर", "taap"],
+        "kn": ["jwara", "ಜ್ವರ", "ಬಿಸಿ ಜ್ವರ", "shitha jwara"]
+      },
+      "linked_concepts": ["DIS_DENGUE_001", "DIS_MALARIA_001"],
+      "response": {
+        "en": {
+          "text": "For mild fever, rest and drink plenty of fluids. Take Paracetamol if needed. If fever crosses 102°F or lasts more than 2 days, visit your nearest ASHA worker right away.",
+          "audio_file": "audio/en/sym_fever_001.mp3"
+        },
+        "hi": {
+          "text": "हल्के बुखार में आराम करें और खूब तरल पदार्थ पिएं। ज़रूरत हो तो पैरासिटामोल लें। अगर बुखार 102°F से ऊपर जाए या 2 दिन से ज़्यादा रहे, तो तुरंत अपने नज़दीकी आशा कार्यकर्ता से मिलें।",
+          "audio_file": "audio/hi/sym_fever_001.mp3"
+        },
+        "kn": {
+          "text": "ಸ್ವಲ್ಪ ಜ್ವರಕ್ಕೆ ವಿಶ್ರಾಂತಿ ಪಡೆಯಿರಿ ಮತ್ತು ಸಾಕಷ್ಟು ದ್ರವ ಪದಾರ್ಥ ಸೇವಿಸಿ. ಅಗತ್ಯವಿದ್ದರೆ ಪ್ಯಾರಸಿಟಮಾಲ್ ತೆಗೆದುಕೊಳ್ಳಿ. ಜ್ವರ 102°F ದಾಟಿದರೆ ಅಥವಾ 2 ದಿನಗಳಿಗಿಂತ ಹೆಚ್ಚು ಇದ್ದರೆ, ತಕ್ಷಣ ನಿಮ್ಮ ಹತ್ತಿರದ ಆಶಾ ಕಾರ್ಯಕರ್ತೆಯನ್ನು ಭೇಟಿ ಮಾಡಿ.",
+          "audio_file": "audio/kn/sym_fever_001.mp3"
+        }
+      },
+      "suggested_medicines": ["MED_PARA_500"],
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "SYM_HEADACHE_001",
+      "type": "symptom",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["headache", "head pain", "head ache"],
+        "hi": ["sir dard", "सिर दर्द", "sar dard", "sir dardh", "sir mein dard"],
+        "kn": ["tale novu", "ತಲೆ ನೋವು", "shir nolu", "tale nolu"]
+      },
+      "linked_concepts": [],
+      "response": {
+        "en": {
+          "text": "For a mild headache, rest in a quiet, dark room and drink water. Take Paracetamol if needed. If the headache is very severe, sudden, or comes with vomiting or blurred vision, see your ASHA worker immediately.",
+          "audio_file": "audio/en/sym_headache_001.mp3"
+        },
+        "hi": {
+          "text": "हल्के सिर दर्द में किसी शांत, अंधेरे कमरे में आराम करें और पानी पिएं। ज़रूरत हो तो पैरासिटामोल लें। अगर सिर दर्द बहुत तेज़ हो, अचानक हो, या उल्टी या धुंधला दिखने के साथ हो, तो तुरंत अपने आशा कार्यकर्ता से मिलें।",
+          "audio_file": "audio/hi/sym_headache_001.mp3"
+        },
+        "kn": {
+          "text": "ಸ್ವಲ್ಪ ತಲೆ ನೋವಿಗೆ ಶಾಂತ, ಕತ್ತಲೆ ಕೋಣೆಯಲ್ಲಿ ವಿಶ್ರಾಂತಿ ಪಡೆಯಿರಿ ಮತ್ತು ನೀರು ಕುಡಿಯಿರಿ. ಅಗತ್ಯವಿದ್ದರೆ ಪ್ಯಾರಸಿಟಮಾಲ್ ತೆಗೆದುಕೊಳ್ಳಿ. ತಲೆ ನೋವು ತುಂಬಾ ತೀವ್ರವಾಗಿದ್ದರೆ, ಇದ್ದಕ್ಕಿದ್ದಂತೆ ಬಂದರೆ, ಅಥವಾ ವಾಂತಿ ಅಥವಾ ಮಸುಕು ಕಣ್ಣುಗಳ ಜೊತೆಗೆ ಇದ್ದರೆ, ತಕ್ಷಣ ನಿಮ್ಮ ಆಶಾ ಕಾರ್ಯಕರ್ತೆಯನ್ನು ಭೇಟಿ ಮಾಡಿ.",
+          "audio_file": "audio/kn/sym_headache_001.mp3"
+        }
+      },
+      "suggested_medicines": ["MED_PARA_500"],
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "DIS_DENGUE_001",
+      "type": "disease",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["dengue", "dengue fever"],
+        "hi": ["dengue", "डेंगू", "dengu bukhar"],
+        "kn": ["dengue", "ಡೆಂಗ್ಯೂ", "dengue jwara"]
+      },
+      "linked_concepts": ["SYM_FEVER_001"],
+      "response": {
+        "en": {
+          "text": "Dengue spreads through mosquito bites and causes high fever, severe body pain, and rash. Watch for warning signs like bleeding gums, severe stomach pain, or vomiting blood — these need immediate hospital care. Remove standing water near your home to prevent mosquito breeding.",
+          "audio_file": "audio/en/dis_dengue_001.mp3"
+        },
+        "hi": {
+          "text": "डेंगू मच्छर के काटने से फैलता है और इसमें तेज़ बुखार, बहुत तेज़ शरीर दर्द और चकत्ते होते हैं। मसूड़ों से खून आना, पेट में तेज़ दर्द, या खून की उल्टी जैसे चेतावनी संकेत दिखें तो तुरंत अस्पताल जाएं। घर के पास पानी जमा न होने दें ताकि मच्छर न पनपें।",
+          "audio_file": "audio/hi/dis_dengue_001.mp3"
+        },
+        "kn": {
+          "text": "ಡೆಂಗ್ಯೂ ಸೊಳ್ಳೆ ಕಡಿತದಿಂದ ಹರಡುತ್ತದೆ ಮತ್ತು ತೀವ್ರ ಜ್ವರ, ತೀವ್ರ ಮೈ ನೋವು ಮತ್ತು ದದ್ದುಗಳನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ. ವಸಡುಗಳಿಂದ ರಕ್ತಸ್ರಾವ, ತೀವ್ರ ಹೊಟ್ಟೆ ನೋವು, ಅಥವಾ ರಕ್ತ ವಾಂತಿಯಂತಹ ಎಚ್ಚರಿಕೆ ಚಿಹ್ನೆಗಳಿದ್ದರೆ ತಕ್ಷಣ ಆಸ್ಪತ್ರೆಗೆ ಹೋಗಿ. ಸೊಳ್ಳೆ ಸಂತಾನೋತ್ಪತ್ತಿ ತಡೆಯಲು ಮನೆಯ ಬಳಿ ನೀರು ನಿಲ್ಲದಂತೆ ನೋಡಿಕೊಳ್ಳಿ.",
+          "audio_file": "audio/kn/dis_dengue_001.mp3"
+        }
+      },
+      "suggested_medicines": ["MED_PARA_500"],
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "DIS_MALARIA_001",
+      "type": "disease",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["malaria", "malaria fever"],
+        "hi": ["malaria", "मलेरिया", "maleria"],
+        "kn": ["malaria", "ಮಲೇರಿಯಾ", "malaria jwara"]
+      },
+      "linked_concepts": ["SYM_FEVER_001"],
+      "response": {
+        "en": {
+          "text": "Malaria spreads through mosquito bites and causes fever with chills, sweating, and body aches that come in cycles. Get a blood test at your nearest health centre as soon as possible. Sleep under a mosquito net to prevent it.",
+          "audio_file": "audio/en/dis_malaria_001.mp3"
+        },
+        "hi": {
+          "text": "मलेरिया मच्छर के काटने से फैलता है और इसमें बुखार के साथ ठंड लगना, पसीना आना और शरीर दर्द चक्रों में होता है। जल्द से जल्द अपने नज़दीकी स्वास्थ्य केंद्र पर खून की जांच कराएं। बचाव के लिए मच्छरदानी के नीचे सोएं।",
+          "audio_file": "audio/hi/dis_malaria_001.mp3"
+        },
+        "kn": {
+          "text": "ಮಲೇರಿಯಾ ಸೊಳ್ಳೆ ಕಡಿತದಿಂದ ಹರಡುತ್ತದೆ ಮತ್ತು ಚಳಿ, ಬೆವರು, ಮತ್ತು ಆವರ್ತಕ ಮೈ ನೋವಿನೊಂದಿಗೆ ಜ್ವರ ಉಂಟುಮಾಡುತ್ತದೆ. ಆದಷ್ಟು ಬೇಗ ನಿಮ್ಮ ಹತ್ತಿರದ ಆರೋಗ್ಯ ಕೇಂದ್ರದಲ್ಲಿ ರಕ್ತ ಪರೀಕ್ಷೆ ಮಾಡಿಸಿ. ತಡೆಯಲು ಸೊಳ್ಳೆ ಪರದೆಯ ಕೆಳಗೆ ಮಲಗಿ.",
+          "audio_file": "audio/kn/dis_malaria_001.mp3"
+        }
+      },
+      "suggested_medicines": ["MED_PARA_500"],
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "VAC_BCG_001",
+      "type": "vaccine",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["bcg", "bcg vaccine", "bcg injection"],
+        "hi": ["bcg", "बीसीजी", "bcg टीका", "bcg ka tika"],
+        "kn": ["bcg", "ಬಿಸಿಜಿ", "bcg ಲಸಿಕೆ"]
+      },
+      "linked_concepts": [],
+      "response": {
+        "en": {
+          "text": "BCG vaccine protects newborns against tuberculosis. It is given as a single shot, usually within days of birth. Visit your nearest ASHA worker or health centre to get it for your child.",
+          "audio_file": "audio/en/vac_bcg_001.mp3"
+        },
+        "hi": {
+          "text": "बीसीजी टीका नवजात शिशुओं को टीबी से बचाता है। यह आमतौर पर जन्म के कुछ दिनों के भीतर एक बार दिया जाता है। अपने बच्चे को यह टीका लगवाने के लिए नज़दीकी आशा कार्यकर्ता या स्वास्थ्य केंद्र पर जाएं।",
+          "audio_file": "audio/hi/vac_bcg_001.mp3"
+        },
+        "kn": {
+          "text": "ಬಿಸಿಜಿ ಲಸಿಕೆ ನವಜಾತ ಶಿಶುಗಳನ್ನು ಕ್ಷಯರೋಗದಿಂದ ರಕ್ಷಿಸುತ್ತದೆ. ಇದನ್ನು ಸಾಮಾನ್ಯವಾಗಿ ಜನನದ ಕೆಲವು ದಿನಗಳೊಳಗೆ ಒಂದು ಬಾರಿ ನೀಡಲಾಗುತ್ತದೆ. ನಿಮ್ಮ ಮಗುವಿಗೆ ಇದನ್ನು ಕೊಡಿಸಲು ಹತ್ತಿರದ ಆಶಾ ಕಾರ್ಯಕರ್ತೆ ಅಥವಾ ಆರೋಗ್ಯ ಕೇಂದ್ರಕ್ಕೆ ಭೇಟಿ ನೀಡಿ.",
+          "audio_file": "audio/kn/vac_bcg_001.mp3"
+        }
+      },
+      "escalation_flag": false
+    },
+    {
+      "concept_id": "MED_PARA_500",
+      "type": "medicine",
+      "severity_tier": "standard",
+      "bypass_fuzzy_matching": false,
+      "canonical_tokens": {
+        "en": ["paracetamol", "para", "crocin", "dolo"],
+        "hi": ["paracetamol", "पैरासिटामोल", "para tablet"],
+        "kn": ["paracetamol", "ಪ್ಯಾರಸಿಟಮಾಲ್"]
+      },
+      "linked_concepts": ["SYM_FEVER_001", "SYM_HEADACHE_001"],
+      "response": {
+        "en": {
+          "text": "Paracetamol 500mg helps with fever and mild pain. Please select your nearest ASHA centre below to check current stock.",
+          "audio_file": "audio/en/med_para_500.mp3"
+        },
+        "hi": {
+          "text": "पैरासिटामोल 500mg बुखार और हल्के दर्द में मदद करता है। कृपया वर्तमान स्टॉक जांचने के लिए नीचे अपना नज़दीकी आशा केंद्र चुनें।",
+          "audio_file": "audio/hi/med_para_500.mp3"
+        },
+        "kn": {
+          "text": "ಪ್ಯಾರಸಿಟಮಾಲ್ 500mg ಜ್ವರ ಮತ್ತು ಸ್ವಲ್ಪ ನೋವಿಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಪ್ರಸ್ತುತ ಸ್ಟಾಕ್ ಪರಿಶೀಲಿಸಲು ದಯವಿಟ್ಟು ಕೆಳಗೆ ನಿಮ್ಮ ಹತ್ತಿರದ ಆಶಾ ಕೇಂದ್ರವನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+          "audio_file": "audio/kn/med_para_500.mp3"
+        }
+      },
+      "requires_location": true,
+      "escalation_flag": false
+    }
+  ]
+}
